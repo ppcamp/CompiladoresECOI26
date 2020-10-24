@@ -1,25 +1,32 @@
 ///////////////////////////////////////////////////////////////////////////////
 // Código do usuário (antes da declaração da classe)
 ///////////////////////////////////////////////////////////////////////////////
-package src;
+// package src;
 
 %%
 ///////////////////////////////////////////////////////////////////////////////
 // Funções e variáveis internas da classe
 ///////////////////////////////////////////////////////////////////////////////
-// %{
-// %}
+%{
+
+private void imprimir(String descricao, String lexema) {
+    System.out.println(lexema + " - " + descricao);
+}
+
+%}
 
 ///////////////////////////////////////////////////////////////////////////////
 // Definições do lexer/programa gerado
 ///////////////////////////////////////////////////////////////////////////////
 %class LexicalAnalyzer
 // Cria a tabela de símbolos
-%debug
+// %debug
 // Contador de linhas,colunas,char
 %line
 %column
 %char
+// Apenas para debugar sem precisar de fazer o código principal.
+%standalone
 // %eof{
 // %init{
 
@@ -39,10 +46,10 @@ INTEIRO = 0|[1-9][0-9]*
 ///////////////////////////////////////////////////////////////////////////////
 "if"         { imprimir("Palavra reservada if", yytext()); }
 "then"       { imprimir("Palavra reservada then", yytext()); }
-{BRANCO}     { imprimir("Espaço em branco", yytext()); }
+{BRANCO}     { imprimir("Espaco em branco", yytext()); }
 {ID}         { imprimir("Identificador", yytext()); }
 {SOMA}       { imprimir("Operador de soma", yytext()); }
-{INTEIRO}    { imprimir("Número Inteiro", yytext()); }
+{INTEIRO}    { imprimir("Numero Inteiro", yytext()); }
 
 // Para qualquer entrada não listada
 . { throw new RuntimeException("Caractere inválido " + yytext()); }

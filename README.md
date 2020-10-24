@@ -184,6 +184,8 @@ end
 > @ppcamp
 >
 > [Jflex tutorial](https://www.youtube.com/watch?v=IV1Rwq7ERR4&ab_channel=MiftaSintaha "Vídeo")
+>
+> [Jflex tuto 2](https://johnidm.gitbooks.io/compiladores-para-humanos/content/part2/building-the-first-lexical-analyzer-with-JFlex.html)
 
 > @ppcamp
 >
