@@ -1,0 +1,12 @@
+{
+  "recommendations": [
+    "mweberaw.jflex",
+    "vscjava.vscode-java-pack",
+    "bierner.github-markdown-preview",
+    "eamodio.gitlens",
+    "visualstudioexptteam.vscodeintellicode",
+    "vscode-icons-team.vscode-icons",
+    "esbenp.prettier-vscode",
+    "dracula-theme.theme-dracula"
+  ]
+}
