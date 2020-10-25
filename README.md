@@ -1,8 +1,10 @@
-# CompilaOuIterpreta :poop:
+# Compila^Iterpreta := :hammer_and_pick: Mini
 
 versão: 0.1
 
 _Projeto configurado em VScode._
+
+_Muitas informações estão contidas nos comentários, dá uma conferida lá_: [#Link](#Comentários)
 
 ## Gramática da Linguagem Mini (a ser desenvolvida):
 
@@ -183,6 +185,35 @@ end
 
 > @ppcamp
 >
+> O código padrão de exemplo é o codigo.mini, caso seja necessário, pode adicionar outros com outro nome e editar o nome padrão na main.
+
+> @ppcamp
+>
+> ```bash
+> # Para compilar/executar o Projeto
+> >> cd src
+> >> jflex Mini.jflex # Gera a classe léxica
+> >> cd ..
+> >> javac MiniLexicalAnalyzer.java -d bin
+> >> cd bin
+> >> java MiniLexicalAnalyzer
+> ```
+
+> @ppcamp
+>
+> ```bash
+> # Para compilar o Jflex
+> >> jflex Mini.jflex
+> >> javac LexicalAnalyzer.java
+> >> java LexicalAnalyzer code_samples/
+> ```
+
+> @ppcamp
+>
+> [Pascal ref](http://www.pascal-central.com/ppl/chapter3.html)
+
+> @ppcamp
+>
 > [Jflex tutorial](https://www.youtube.com/watch?v=IV1Rwq7ERR4&ab_channel=MiftaSintaha "Vídeo")
 >
 > [Jflex tuto 2](https://johnidm.gitbooks.io/compiladores-para-humanos/content/part2/building-the-first-lexical-analyzer-with-JFlex.html)
@@ -202,3 +233,7 @@ end
 > @ppcamp
 >
 > **Instale as extensões recomendadas:** `@recommended`. Modificações sempre em stack.
+
+```
+
+```
