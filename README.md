@@ -195,8 +195,7 @@ end
 > >> jflex Mini.jflex # Gera a classe léxica
 > >> cd ..
 > >> javac MiniLexicalAnalyzer.java -d bin
-> >> cd bin
-> >> java MiniLexicalAnalyzer
+> >> java -classpath bin MiniLexicalAnalyzer
 > ```
 
 > @ppcamp

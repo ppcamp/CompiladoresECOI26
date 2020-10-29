@@ -6,7 +6,7 @@ import src.MiniToken;
 
 public class MiniLexicalAnalyzer {
   public static void main(String[] args) throws IOException {
-    LexicalAnalyzer lexical = new LexicalAnalyzer(new FileReader("../code_samples/codigo.mini"));
+    LexicalAnalyzer lexical = new LexicalAnalyzer(new FileReader("code_samples/codigo.mini"));
 
     MiniToken token;
 
