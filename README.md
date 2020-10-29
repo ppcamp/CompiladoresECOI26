@@ -189,12 +189,13 @@ end
 
 > @ppcamp
 >
+> Como precisamos que o código rode no replt, devemos compilar ele para uma versão mais antiga [(clique aqui)](https://stackoverflow.com/questions/47457105/class-has-been-compiled-by-a-more-recent-version-of-the-java-environment) para ver essas versões.
 > ```bash
 > # Para compilar/executar o Projeto
 > >> cd src
 > >> jflex Mini.jflex # Gera a classe léxica
 > >> cd ..
-> >> javac MiniLexicalAnalyzer.java -d bin
+> >> javac -target 11 -source 11 MiniLexicalAnalyzer.java -d bin
 > >> java -classpath bin MiniLexicalAnalyzer
 > ```
 
